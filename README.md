@@ -23,7 +23,7 @@ llm embed -m clip -c 'Hello world'
 ```
 Or an image like this:
 ```bash
-llm embed -m clip --binary -i  IMG_4801.jpeg
+llm embed -m clip --binary -i IMG_4801.jpeg
 ```
 
 Embeddings are more useful if you store them in a database - see [the LLM documentation](https://llm.datasette.io/en/stable/embeddings/cli.html#storing-embeddings-in-sqlite) for details.
