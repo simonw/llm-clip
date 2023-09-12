@@ -1,0 +1,26 @@
+[project]
+name = "llm-clip"
+version = "0.1a0"
+description = "Generate embeddings for images and text using CLIP with LLM"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm>=0.10a1",
+    "sentence-transformers"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-clip"
+Changelog = "https://github.com/simonw/llm-clip/releases"
+Issues = "https://github.com/simonw/llm-clip/issues"
+CI = "https://github.com/simonw/llm-clip/actions"
+
+[project.entry-points.llm]
+clip = "llm_clip"
+
+[project.optional-dependencies]
+test = ["pytest"]
