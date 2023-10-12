@@ -1,5 +1,6 @@
 import llm
 
+
 def test_run_embedding():
     model = llm.get_embedding_model("clip")
     result = model.embed("bunny")

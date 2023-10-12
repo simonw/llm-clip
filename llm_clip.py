@@ -12,7 +12,7 @@ def register_embedding_models(register):
 class ClipEmbeddingModel(llm.EmbeddingModel):
     model_id = "clip"
     supports_binary = True
-    supports_text= True
+    supports_text = True
 
     def __init__(self):
         self._model = None
@@ -20,7 +20,7 @@ class ClipEmbeddingModel(llm.EmbeddingModel):
     def embed_batch(self, items):
         # Embeds a mix of text strings and binary images
         if self._model is None:
-            self._model = SentenceTransformer('clip-ViT-B-32')
+            self._model = SentenceTransformer("clip-ViT-B-32")
 
         to_embed = []
 
